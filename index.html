@@ -1,0 +1,718 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Velora Travels - Explore the World</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Scroll to Top Button -->
+    <button id="scrollTop" class="scroll-top" aria-label="Scroll to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Dark Mode Toggle -->
+    <button id="darkModeToggle" class="dark-mode-toggle" aria-label="Toggle dark mode">
+        <i class="fas fa-moon"></i>
+    </button>
+
+    <!-- Header & Navigation -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <!-- Logo -->
+            <a href="#" class="nav__logo">
+                <i class="fas fa-compass"></i>
+                <span>Velora Travels</span>
+            </a>
+
+            <!-- Navigation Menu -->
+            <ul class="nav__menu" id="navMenu">
+                <li><a href="#home" class="nav__link active">Home</a></li>
+                <li><a href="#destinations" class="nav__link">Destinations</a></li>
+                <li><a href="#packages" class="nav__link">Packages</a></li>
+                <li><a href="#services" class="nav__link">Services</a></li>
+                <li><a href="#about" class="nav__link">About Us</a></li>
+                <li><a href="#contact" class="nav__link">Contact</a></li>
+            </ul>
+
+            <!-- Mobile Menu Button -->
+            <button class="nav__toggle" id="navToggle" aria-label="Toggle navigation menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero__overlay"></div>
+        <div class="hero__content" data-aos="fade-up">
+            <h1 class="hero__title">Explore the World with <span>Velora Travels</span></h1>
+            <p class="hero__subtitle">Discover unforgettable journeys and create memories that last forever.</p>
+            <div class="hero__buttons">
+                <a href="#destinations" class="btn btn--primary">Explore Destinations</a>
+                <a href="#contact" class="btn btn--outline">Book Now</a>
+            </div>
+        </div>
+        <div class="hero__scroll">
+            <a href="#destinations" class="scroll-indicator">
+                <span>Scroll Down</span>
+                <i class="fas fa-chevron-down"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Featured Destinations -->
+    <section class="destinations section" id="destinations">
+        <div class="container">
+            <div class="section__header" data-aos="fade-up">
+                <span class="section__subtitle">Popular Places</span>
+                <h2 class="section__title">Featured Destinations</h2>
+                <p class="section__description">Explore our handpicked destinations for your next adventure</p>
+            </div>
+
+            <div class="destinations__grid">
+                <!-- Maldives -->
+                <div class="destination-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="destination-card__image">
+                        <img src="https://images.unsplash.com/photo-1514282401047-d79a71a590e8?w=600&h=400&fit=crop" alt="Maldives">
+                        <div class="destination-card__overlay">
+                            <button class="btn btn--small">Learn More</button>
+                        </div>
+                    </div>
+                    <div class="destination-card__content">
+                        <h3 class="destination-card__title">Maldives</h3>
+                        <p class="destination-card__description">Crystal clear waters and pristine beaches await in this tropical paradise.</p>
+                        <div class="destination-card__meta">
+                            <span><i class="fas fa-star"></i> 4.9</span>
+                            <span><i class="fas fa-clock"></i> 7 Days</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Switzerland -->
+                <div class="destination-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="destination-card__image">
+                        <img src="https://images.unsplash.com/photo-1530122037265-a5f1f91d3b99?w=600&h=400&fit=crop" alt="Switzerland">
+                        <div class="destination-card__overlay">
+                            <button class="btn btn--small">Learn More</button>
+                        </div>
+                    </div>
+                    <div class="destination-card__content">
+                        <h3 class="destination-card__title">Switzerland</h3>
+                        <p class="destination-card__description">Majestic Alps, charming villages, and world-class skiing experiences.</p>
+                        <div class="destination-card__meta">
+                            <span><i class="fas fa-star"></i> 4.8</span>
+                            <span><i class="fas fa-clock"></i> 10 Days</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Paris -->
+                <div class="destination-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="destination-card__image">
+                        <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=600&h=400&fit=crop" alt="Paris">
+                        <div class="destination-card__overlay">
+                            <button class="btn btn--small">Learn More</button>
+                        </div>
+                    </div>
+                    <div class="destination-card__content">
+                        <h3 class="destination-card__title">Paris</h3>
+                        <p class="destination-card__description">The City of Light offers romance, art, and culinary excellence.</p>
+                        <div class="destination-card__meta">
+                            <span><i class="fas fa-star"></i> 4.7</span>
+                            <span><i class="fas fa-clock"></i> 5 Days</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bali -->
+                <div class="destination-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="destination-card__image">
+                        <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=600&h=400&fit=crop" alt="Bali">
+                        <div class="destination-card__overlay">
+                            <button class="btn btn--small">Learn More</button>
+                        </div>
+                    </div>
+                    <div class="destination-card__content">
+                        <h3 class="destination-card__title">Bali</h3>
+                        <p class="destination-card__description">Ancient temples, lush rice terraces, and vibrant culture in Indonesia.</p>
+                        <div class="destination-card__meta">
+                            <span><i class="fas fa-star"></i> 4.8</span>
+                            <span><i class="fas fa-clock"></i> 8 Days</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Japan -->
+                <div class="destination-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="destination-card__image">
+                        <img src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?w=600&h=400&fit=crop" alt="Japan">
+                        <div class="destination-card__overlay">
+                            <button class="btn btn--small">Learn More</button>
+                        </div>
+                    </div>
+                    <div class="destination-card__content">
+                        <h3 class="destination-card__title">Japan</h3>
+                        <p class="destination-card__description">A perfect blend of ancient traditions and cutting-edge modernity.</p>
+                        <div class="destination-card__meta">
+                            <span><i class="fas fa-star"></i> 4.9</span>
+                            <span><i class="fas fa-clock"></i> 12 Days</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sri Lanka -->
+                <div class="destination-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="destination-card__image">
+                            <img src="https://images.unsplash.com/photo-1571406761758-9a3eed5338ef?w=600&h=400&fit=crop" alt="Sri Lanka">                        <div class="destination-card__overlay">
+                            <button class="btn btn--small">Learn More</button>
+                        </div>
+                    </div>
+                    <div class="destination-card__content">
+                        <h3 class="destination-card__title">Sri Lanka</h3>
+                        <p class="destination-card__description">Tea plantations, wildlife safaris, and ancient ruins in the Pearl of the Indian Ocean.</p>
+                        <div class="destination-card__meta">
+                            <span><i class="fas fa-star"></i> 4.6</span>
+                            <span><i class="fas fa-clock"></i> 9 Days</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Travel Packages -->
+    <section class="packages section section--alt" id="packages">
+        <div class="container">
+            <div class="section__header" data-aos="fade-up">
+                <span class="section__subtitle">Special Offers</span>
+                <h2 class="section__title">Travel Packages</h2>
+                <p class="section__description">Choose the perfect package for your dream vacation</p>
+            </div>
+
+            <div class="packages__grid">
+                <!-- Basic Package -->
+                <div class="package-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="package-card__header">
+                        <h3 class="package-card__title">Basic Package</h3>
+                        <div class="package-card__price">
+                            <span class="currency">$</span>
+                            <span class="amount">999</span>
+                            <span class="period">/person</span>
+                        </div>
+                    </div>
+                    <div class="package-card__body">
+                        <ul class="package-card__features">
+                            <li><i class="fas fa-check"></i> 5 Days, 4 Nights</li>
+                            <li><i class="fas fa-check"></i> 3-Star Hotel Accommodation</li>
+                            <li><i class="fas fa-check"></i> Daily Breakfast</li>
+                            <li><i class="fas fa-check"></i> Airport Transfers</li>
+                            <li><i class="fas fa-check"></i> City Tour Guide</li>
+                            <li class="disabled"><i class="fas fa-times"></i> Travel Insurance</li>
+                            <li class="disabled"><i class="fas fa-times"></i> Premium Activities</li>
+                        </ul>
+                        <button class="btn btn--primary btn--full">Book Now</button>
+                    </div>
+                </div>
+
+                <!-- Family Package -->
+                <div class="package-card package-card--featured" data-aos="fade-up" data-aos-delay="200">
+                    <div class="package-card__badge">Popular</div>
+                    <div class="package-card__header">
+                        <h3 class="package-card__title">Family Package</h3>
+                        <div class="package-card__price">
+                            <span class="currency">$</span>
+                            <span class="amount">1,899</span>
+                            <span class="period">/family</span>
+                        </div>
+                    </div>
+                    <div class="package-card__body">
+                        <ul class="package-card__features">
+                            <li><i class="fas fa-check"></i> 7 Days, 6 Nights</li>
+                            <li><i class="fas fa-check"></i> 4-Star Hotel Accommodation</li>
+                            <li><i class="fas fa-check"></i> All Meals Included</li>
+                            <li><i class="fas fa-check"></i> Private Transportation</li>
+                            <li><i class="fas fa-check"></i> Family Activities</li>
+                            <li><i class="fas fa-check"></i> Travel Insurance</li>
+                            <li class="disabled"><i class="fas fa-times"></i> Luxury Suite</li>
+                        </ul>
+                        <button class="btn btn--primary btn--full">Book Now</button>
+                    </div>
+                </div>
+
+                <!-- Luxury Package -->
+                <div class="package-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="package-card__header">
+                        <h3 class="package-card__title">Luxury Package</h3>
+                        <div class="package-card__price">
+                            <span class="currency">$</span>
+                            <span class="amount">3,499</span>
+                            <span class="period">/person</span>
+                        </div>
+                    </div>
+                    <div class="package-card__body">
+                        <ul class="package-card__features">
+                            <li><i class="fas fa-check"></i> 10 Days, 9 Nights</li>
+                            <li><i class="fas fa-check"></i> 5-Star Luxury Resort</li>
+                            <li><i class="fas fa-check"></i> Gourmet Dining</li>
+                            <li><i class="fas fa-check"></i> Private Chauffeur</li>
+                            <li><i class="fas fa-check"></i> Personal Tour Guide</li>
+                            <li><i class="fas fa-check"></i> Premium Travel Insurance</li>
+                            <li><i class="fas fa-check"></i> VIP Airport Lounge</li>
+                        </ul>
+                        <button class="btn btn--primary btn--full">Book Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services section" id="services">
+        <div class="container">
+            <div class="section__header" data-aos="fade-up">
+                <span class="section__subtitle">What We Offer</span>
+                <h2 class="section__title">Our Services</h2>
+                <p class="section__description">Comprehensive travel services to make your journey seamless</p>
+            </div>
+
+            <div class="services__grid">
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-card__icon">
+                        <i class="fas fa-plane"></i>
+                    </div>
+                    <h3 class="service-card__title">Flight Booking</h3>
+                    <p class="service-card__description">Best deals on domestic and international flights with flexible booking options.</p>
+                </div>
+
+                <div class="service-card" data-aos="fade-up" data-aos-delay="150">
+                    <div class="service-card__icon">
+                        <i class="fas fa-hotel"></i>
+                    </div>
+                    <h3 class="service-card__title">Hotel Reservations</h3>
+                    <p class="service-card__description">Handpicked hotels and resorts to suit every budget and preference.</p>
+                </div>
+
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-card__icon">
+                        <i class="fas fa-map-marked-alt"></i>
+                    </div>
+                    <h3 class="service-card__title">Tour Guides</h3>
+                    <p class="service-card__description">Expert local guides to help you discover hidden gems and authentic experiences.</p>
+                </div>
+
+                <div class="service-card" data-aos="fade-up" data-aos-delay="250">
+                    <div class="service-card__icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3 class="service-card__title">Travel Insurance</h3>
+                    <p class="service-card__description">Comprehensive coverage to protect you and your loved ones during travel.</p>
+                </div>
+
+                <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-card__icon">
+                        <i class="fas fa-car"></i>
+                    </div>
+                    <h3 class="service-card__title">Transportation</h3>
+                    <p class="service-card__description">Reliable car rentals, transfers, and transportation services worldwide.</p>
+                </div>
+
+                <div class="service-card" data-aos="fade-up" data-aos-delay="350">
+                    <div class="service-card__icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3 class="service-card__title">Customer Support</h3>
+                    <p class="service-card__description">24/7 dedicated support team to assist you anytime, anywhere in the world.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials section section--alt" id="testimonials">
+        <div class="container">
+            <div class="section__header" data-aos="fade-up">
+                <span class="section__subtitle">Testimonials</span>
+                <h2 class="section__title">What Our Travelers Say</h2>
+                <p class="section__description">Real stories from our satisfied customers</p>
+            </div>
+
+            <div class="testimonials__slider" data-aos="fade-up">
+                <div class="testimonials__track" id="testimonialsTrack">
+                    <!-- Testimonial 1 -->
+                    <div class="testimonial-card">
+                        <div class="testimonial-card__stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-card__text">"Velora Travels made our honeymoon absolutely magical. The Maldives package was perfect, and every detail was taken care of. Highly recommended!"</p>
+                        <div class="testimonial-card__author">
+                            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop&crop=face" alt="Sarah Johnson" class="testimonial-card__avatar">
+                            <div class="testimonial-card__info">
+                                <h4>Sarah Johnson</h4>
+                                <span>Traveled to Maldives</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 2 -->
+                    <div class="testimonial-card">
+                        <div class="testimonial-card__stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-card__text">"Our family trip to Japan was incredible. The itinerary was well-planned, and our guide was knowledgeable and friendly. The kids loved every moment!"</p>
+                        <div class="testimonial-card__author">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face" alt="Michael Chen" class="testimonial-card__avatar">
+                            <div class="testimonial-card__info">
+                                <h4>Michael Chen</h4>
+                                <span>Traveled to Japan</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 3 -->
+                    <div class="testimonial-card">
+                        <div class="testimonial-card__stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <p class="testimonial-card__text">"I've traveled with many agencies, but Velora stands out for their professionalism and attention to detail. Switzerland was a dream come true!"</p>
+                        <div class="testimonial-card__author">
+                            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop&crop=face" alt="Emma Williams" class="testimonial-card__avatar">
+                            <div class="testimonial-card__info">
+                                <h4>Emma Williams</h4>
+                                <span>Traveled to Switzerland</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 4 -->
+                    <div class="testimonial-card">
+                        <div class="testimonial-card__stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-card__text">"The Bali retreat organized by Velora was exactly what I needed. Yoga sessions, temple visits, and beach time - perfectly balanced and stress-free."</p>
+                        <div class="testimonial-card__author">
+                            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop&crop=face" alt="David Park" class="testimonial-card__avatar">
+                            <div class="testimonial-card__info">
+                                <h4>David Park</h4>
+                                <span>Traveled to Bali</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slider Controls -->
+                <button class="slider-btn slider-btn--prev" id="sliderPrev" aria-label="Previous testimonial">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="slider-btn slider-btn--next" id="sliderNext" aria-label="Next testimonial">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+                
+                <!-- Slider Dots -->
+                <div class="slider-dots" id="sliderDots"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery section" id="gallery">
+        <div class="container">
+            <div class="section__header" data-aos="fade-up">
+                <span class="section__subtitle">Memories</span>
+                <h2 class="section__title">Travel Gallery</h2>
+                <p class="section__description">Glimpses of unforgettable moments from our travelers</p>
+            </div>
+
+            <div class="gallery__grid">
+                <div class="gallery__item gallery__item--large" data-aos="zoom-in">
+                    <img src="https://images.unsplash.com/photo-1506929562872-bb421503ef21?w=800&h=600&fit=crop" alt="Beach sunset">
+                    <div class="gallery__overlay">
+                        <i class="fas fa-search-plus"></i>
+                        <span>Maldives Sunset</span>
+                    </div>
+                </div>
+                <div class="gallery__item" data-aos="zoom-in" data-aos-delay="100">
+                    <img src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=400&h=300&fit=crop" alt="Swiss mountains">
+                    <div class="gallery__overlay">
+                        <i class="fas fa-search-plus"></i>
+                        <span>Swiss Alps</span>
+                    </div>
+                </div>
+                <div class="gallery__item" data-aos="zoom-in" data-aos-delay="200">
+                    <img src="https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?w=400&h=300&fit=crop" alt="Venice">
+                    <div class="gallery__overlay">
+                        <i class="fas fa-search-plus"></i>
+                        <span>Venice Canals</span>
+                    </div>
+                </div>
+                <div class="gallery__item" data-aos="zoom-in" data-aos-delay="300">
+                    <img src="https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=400&h=300&fit=crop" alt="Tokyo">
+                    <div class="gallery__overlay">
+                        <i class="fas fa-search-plus"></i>
+                        <span>Tokyo Nights</span>
+                    </div>
+                </div>
+                <div class="gallery__item gallery__item--wide" data-aos="zoom-in" data-aos-delay="400">
+                    <img src="https://images.unsplash.com/photo-1552733407-5d5c46c3bb3b?w=800&h=400&fit=crop" alt="Bali rice terraces">
+                    <div class="gallery__overlay">
+                        <i class="fas fa-search-plus"></i>
+                        <span>Bali Rice Terraces</span>
+                    </div>
+                </div>
+                <div class="gallery__item" data-aos="zoom-in" data-aos-delay="500">
+                    <img src="https://images.unsplash.com/photo-1528164344705-47542687000d?w=400&h=300&fit=crop" alt="Japan temple">
+                    <div class="gallery__overlay">
+                        <i class="fas fa-search-plus"></i>
+                        <span>Kyoto Temple</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section class="about section section--alt" id="about">
+        <div class="container">
+            <div class="about__wrapper">
+                <div class="about__image" data-aos="fade-right">
+                    <img src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=600&h=700&fit=crop" alt="Travel adventure">
+                    <div class="about__experience">
+                        <span class="about__years">15+</span>
+                        <span class="about__label">Years of Experience</span>
+                    </div>
+                </div>
+                <div class="about__content" data-aos="fade-left">
+                    <span class="section__subtitle">About Us</span>
+                    <h2 class="section__title">Your Trusted Travel Partner</h2>
+                    <p class="about__text">Velora Travels has been crafting unforgettable travel experiences since 2009. We are a team of passionate travel enthusiasts dedicated to turning your dream vacations into reality.</p>
+                    <p class="about__text">With over 15 years of expertise, we have served thousands of satisfied travelers across the globe. Our commitment to excellence, personalized service, and attention to detail sets us apart in the travel industry.</p>
+                    
+                    <div class="about__stats">
+                        <div class="about__stat">
+                            <span class="about__stat-number">50K+</span>
+                            <span class="about__stat-label">Happy Travelers</span>
+                        </div>
+                        <div class="about__stat">
+                            <span class="about__stat-number">100+</span>
+                            <span class="about__stat-label">Destinations</span>
+                        </div>
+                        <div class="about__stat">
+                            <span class="about__stat-number">500+</span>
+                            <span class="about__stat-label">Tour Packages</span>
+                        </div>
+                    </div>
+
+                    <a href="#contact" class="btn btn--primary">Start Your Journey</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact section" id="contact">
+        <div class="container">
+            <div class="section__header" data-aos="fade-up">
+                <span class="section__subtitle">Get in Touch</span>
+                <h2 class="section__title">Contact Us</h2>
+                <p class="section__description">Ready to start your adventure? Reach out to us today</p>
+            </div>
+
+            <div class="contact__wrapper">
+                <!-- Contact Info -->
+                <div class="contact__info" data-aos="fade-right">
+                    <div class="contact__info-item">
+                        <div class="contact__info-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div class="contact__info-content">
+                            <h4>Phone</h4>
+                            <p>+1 (555) 123-4567</p>
+                            <p>+1 (555) 987-6543</p>
+                        </div>
+                    </div>
+
+                    <div class="contact__info-item">
+                        <div class="contact__info-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact__info-content">
+                            <h4>Email</h4>
+                            <p>info@veloratravels.com</p>
+                            <p>bookings@veloratravels.com</p>
+                        </div>
+                    </div>
+
+                    <div class="contact__info-item">
+                        <div class="contact__info-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact__info-content">
+                            <h4>Address</h4>
+                            <p>123 Travel Avenue, Suite 456</p>
+                            <p>New York, NY 10001, USA</p>
+                        </div>
+                    </div>
+
+                    <div class="contact__map">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.1422937950147!2d-73.98731968482413!3d40.75889497932681!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25855c6480299%3A0x55194ec5a1ae0727!2sTimes%20Square!5e0!3m2!1sen!2sus!4v1620000000000!5m2!1sen!2sus" 
+                            width="100%" 
+                            height="250" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact__form-wrapper" data-aos="fade-left">
+                    <form class="contact__form" id="contactForm">
+                        <div class="form__group">
+                            <label for="name" class="form__label">Full Name</label>
+                            <input type="text" id="name" class="form__input" placeholder="John Doe" required>
+                            <i class="fas fa-user form__icon"></i>
+                        </div>
+
+                        <div class="form__group">
+                            <label for="email" class="form__label">Email Address</label>
+                            <input type="email" id="email" class="form__input" placeholder="john@example.com" required>
+                            <i class="fas fa-envelope form__icon"></i>
+                        </div>
+
+                        <div class="form__group">
+                            <label for="phone" class="form__label">Phone Number</label>
+                            <input type="tel" id="phone" class="form__input" placeholder="+1 (555) 000-0000">
+                            <i class="fas fa-phone form__icon"></i>
+                        </div>
+
+                        <div class="form__group">
+                            <label for="subject" class="form__label">Subject</label>
+                            <select id="subject" class="form__input form__select" required>
+                                <option value="">Select a subject</option>
+                                <option value="booking">Tour Booking</option>
+                                <option value="inquiry">General Inquiry</option>
+                                <option value="custom">Custom Package</option>
+                                <option value="support">Customer Support</option>
+                            </select>
+                            <i class="fas fa-tag form__icon"></i>
+                        </div>
+
+                        <div class="form__group">
+                            <label for="message" class="form__label">Message</label>
+                            <textarea id="message" class="form__input form__textarea" rows="5" placeholder="Tell us about your dream vacation..." required></textarea>
+                            <i class="fas fa-comment form__icon"></i>
+                        </div>
+
+                        <button type="submit" class="btn btn--primary btn--full">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer__top">
+            <div class="container">
+                <div class="footer__grid">
+                    <!-- Company Info -->
+                    <div class="footer__col">
+                        <a href="#" class="footer__logo">
+                            <i class="fas fa-compass"></i>
+                            <span>Velora Travels</span>
+                        </a>
+                        <p class="footer__description">Your trusted partner in creating unforgettable travel experiences. Discover the world with confidence and comfort.</p>
+                        <div class="footer__social">
+                            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Quick Links -->
+                    <div class="footer__col">
+                        <h4 class="footer__title">Quick Links</h4>
+                        <ul class="footer__links">
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#destinations">Destinations</a></li>
+                            <li><a href="#packages">Packages</a></li>
+                            <li><a href="#services">Services</a></li>
+                            <li><a href="#about">About Us</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Services -->
+                    <div class="footer__col">
+                        <h4 class="footer__title">Services</h4>
+                        <ul class="footer__links">
+                            <li><a href="#">Flight Booking</a></li>
+                            <li><a href="#">Hotel Reservations</a></li>
+                            <li><a href="#">Tour Guides</a></li>
+                            <li><a href="#">Travel Insurance</a></li>
+                            <li><a href="#">Transportation</a></li>
+                            <li><a href="#">Custom Packages</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Newsletter -->
+                    <div class="footer__col">
+                        <h4 class="footer__title">Newsletter</h4>
+                        <p class="footer__description">Subscribe to get exclusive deals and travel inspiration.</p>
+                        <form class="footer__newsletter" id="newsletterForm">
+                            <input type="email" placeholder="Enter your email" required>
+                            <button type="submit" aria-label="Subscribe"><i class="fas fa-paper-plane"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer__bottom">
+            <div class="container">
+                <p class="footer__copyright">
+                    &copy; 2024 Velora Travels. All rights reserved. Designed with <i class="fas fa-heart"></i> for travelers.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- AOS Animation Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
